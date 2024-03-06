@@ -4,9 +4,9 @@ const exphbs = require('express-handlebars')
 const app = express()
 const cors = require('cors')
 const axios = require('axios')
-const dotnet = require('dotnet')
+// const dotnet = require('dotnet')
 
-dotnet.config({path: path.join(__dirname, 'config', '.env')})
+// dotnet.config({path: path.join(__dirname, 'config', '.env')})
 
 app.use(cors())
 app.use(express.static('public'))
