@@ -1,0 +1,9 @@
+<video id="myVideo" class="video-js vjs-default-skin" controls width="640" height="360">
+    <source src="{{{data.source}}}" type="application/x-mpegURL">
+</video>
+<h2>{{{data.title}}}</h2>
+<script src="script.js"></script>
+<script>
+    // Initialize video.js player
+    videojs('myVideo');
+</script>
