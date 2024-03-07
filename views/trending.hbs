@@ -1,9 +1,9 @@
-<div style="display: flex;">
+<div style="">
     {{#each data}}
-        <div style="flex-direction:column; margin:8px;">
+        <div style="margin:8px;">
             <h3>{{title}}</h3>
             <span>{{released_ep_count}}</span><br>
-            <a href="/about/{{slug}}" class="btn-primary">About</a>
+            <a href="/about/{{slug}}" class="btn-primary" style="margin-bottom: 10px;">About</a>
             <a href="/{{slug}}/{{id}}" class="btn-primary">Get Episodes</a>
         </div>
     {{/each}}
