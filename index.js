@@ -173,4 +173,4 @@ app.get('/source/:slug/:ep_id', async (req,res)=>{
 //     res.send(data)
 // })
 
-app.listen(process.env.PORT, ()=>console.log('Server running...'))
+app.listen(8080, ()=>console.log('Server running...'))
