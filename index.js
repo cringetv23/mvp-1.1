@@ -4,7 +4,7 @@ const exphbs = require('express-handlebars')
 const app = express()
 const cors = require('cors')
 const axios = require('axios')
-require('dotenv').config({ path: path.join(__dirname, 'config', '.env') });
+// require('dotenv').config({ path: path.join(__dirname, 'config', '.env') });
 
 
 app.use(cors())
