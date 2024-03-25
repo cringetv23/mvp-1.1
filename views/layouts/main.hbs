@@ -1,26 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cringe</title>
+    <link rel="stylesheet" href="/css/fontawesome-all.css" />
+    <link rel="stylesheet" href="/css/swiper.css" />
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" href="/css/main.css" />
     <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
     <script src="https://unpkg.com/video.js/dist/video.js"></script>
     <script src="https://unpkg.com/videojs-http-streaming/dist/videojs-http-streaming.js"></script>
-    <link rel="stylesheet" href="/styles/main.css">
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/trending/week">Trending (Week)</a></li>
-                <li><a href="/trending/month">Trending (Month)</a></li>
-                <li><a href="/trending/all">Trending (All)</a></li>
-            </ul>
-        </nav>
+      <img src="/images/logo.png" alt="" class="logo1" />
+
+      <div class="header-aside">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-bell"></i>
+        <img src="/images/profile.png" alt="" />
+      </div>
     </header>
+    <nav>
+      <div class="logo2">
+        <img src="/images/logo.png" alt="" />
+      </div>
+      <div class="mobile-nav">
+        <a href="/">
+          <div class="nav-icon active">
+            <img src="/images/home.png" alt="" />
+          </div>
+        </a>
+        <a href="favourites.html">
+          <div class="nav-icon">
+            <img src="/images/heart.png" alt="" />
+          </div>
+        </a>
+        <a href="categories.html">
+          <div class="nav-icon">
+            <img src="/images/categories.png" alt="" />
+          </div>
+        </a>
+        <a href="watchlist.html">
+          <div class="nav-icon">
+            <img src="/images/watchlist.png" alt="" />
+          </div>
+        </a>
+      </div>
+
+      <div class="logo3">
+        <a href="profile.html">
+          <div class="nav-icon">
+            <img src="/images/settings.png" alt="" />
+          </div>
+        </a>
+        <div class="nav-icon red-btn">
+          <img src="/images/logout.png" alt="" />
+        </div>
+      </div>
+    </nav>
     {{{body}}}
-</body>
+  </body>
 </html>

@@ -1,6 +1,89 @@
-<h1>Homepage</h1>
-<div class="trending-anime">
-    <a href="/trending/week" class="btn-primary">Trending Anime by Week</a>
-    <a href="/trending/month" class="btn-primary">Trending Anime by Month</a>
-    <a href="/trending/all" class="btn-primary">All Trending Anime</a>
-</div>
+<main>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      {{#each data}}
+        <div class="swiper-slide slide1" style="background-image: url({{img}});">
+          <div>
+            <h1>{{title}}</h1>
+            <p>Now Streaming</p>
+            <br />
+            <p>
+              <button class="green-btn"><a href="/{{slug}}/{{id}}">Play Now</a></button
+              ><button class="gray-btn">
+                <i class="fas fa-ellipsis-v"></i>
+              </button>
+            </p>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="swiper mySwiper2 categories">
+    <h2>Categories</h2>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="category-card">
+          <div class="category-card-header">
+            <span>Shonen</span>
+            <span><img src="/images/Group 9.png" alt="" /></span>
+          </div>
+          <br />
+
+          <div>
+            <button class="green-btn">view all</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+          <div class="category-card-header">
+            <span>Shonen</span>
+            <span><img src="/images/Group 9.png" alt="" /></span>
+          </div>
+          <br />
+
+          <div>
+            <button class="green-btn">view all</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="category-card">
+          <div class="category-card-header">
+            <span>Shonen</span>
+            <span><img src="/images/Group 9.png" alt="" /></span>
+          </div>
+          <br />
+
+          <div>
+            <button class="green-btn">view all</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-buttons">
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <div>
+    <h2>Now Trending</h2>
+    <div class="trending">
+      {{#each data}}
+        <div class="trending-card">
+          <a href="/{{slug}}/{{id}}">
+            <img src="{{img}}" alt="" />
+          </a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <br /><br /><br /><br />
+
+  <script src="/js/swiper.js"></script>
+  <script src="/js/main.js"></script>
+</main>
